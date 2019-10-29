@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		B9F10735236777130091CA7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F10734236777130091CA7A /* AppDelegate.swift */; };
-		B9F10737236777130091CA7A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F10736236777130091CA7A /* SceneDelegate.swift */; };
 		B9F10739236777130091CA7A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F10738236777130091CA7A /* ViewController.swift */; };
 		B9F1073C236777130091CA7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9F1073A236777130091CA7A /* Main.storyboard */; };
 		B9F1073E236777130091CA7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9F1073D236777130091CA7A /* Assets.xcassets */; };
@@ -20,9 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		77BC8FB55FC5B23B5B287BD4 /* Pods-Bullseye.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bullseye.debug.xcconfig"; path = "Target Support Files/Pods-Bullseye/Pods-Bullseye.debug.xcconfig"; sourceTree = "<group>"; };
 		B9F10731236777130091CA7A /* Bullseye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bullseye.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9F10734236777130091CA7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B9F10736236777130091CA7A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B9F10738236777130091CA7A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B9F1073B236777130091CA7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B9F1073D236777130091CA7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -32,6 +31,7 @@
 		B9F1074A2367BEBD0091CA7A /* headshot-901849f7c18a1b12c53bdfc60bb165a9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "headshot-901849f7c18a1b12c53bdfc60bb165a9.png"; sourceTree = "<group>"; };
 		B9F1074C2367BEEE0091CA7A /* AboutAuthorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutAuthorViewController.swift; sourceTree = "<group>"; };
 		B9F107502367C03F0091CA7A /* headshot-901849f7c18a1b12c53bdfc60bb165a9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "headshot-901849f7c18a1b12c53bdfc60bb165a9.png"; sourceTree = "<group>"; };
+		CE54D929C536834FAD39DC70 /* Pods-Bullseye.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bullseye.release.xcconfig"; path = "Target Support Files/Pods-Bullseye/Pods-Bullseye.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +45,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		078BF3DBA4FAD86C7ACF2D46 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		97B505682AFF68A314FCD50A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				77BC8FB55FC5B23B5B287BD4 /* Pods-Bullseye.debug.xcconfig */,
+				CE54D929C536834FAD39DC70 /* Pods-Bullseye.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		B9F10728236777130091CA7A = {
 			isa = PBXGroup;
 			children = (
@@ -52,6 +68,8 @@
 				B9F10732236777130091CA7A /* Products */,
 				B9F107502367C03F0091CA7A /* headshot-901849f7c18a1b12c53bdfc60bb165a9.png */,
 				B9F1074A2367BEBD0091CA7A /* headshot-901849f7c18a1b12c53bdfc60bb165a9.png */,
+				97B505682AFF68A314FCD50A /* Pods */,
+				078BF3DBA4FAD86C7ACF2D46 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,7 +86,6 @@
 			children = (
 				B9F107482367BCAD0091CA7A /* AboutViewController.swift */,
 				B9F10734236777130091CA7A /* AppDelegate.swift */,
-				B9F10736236777130091CA7A /* SceneDelegate.swift */,
 				B9F10738236777130091CA7A /* ViewController.swift */,
 				B9F1073A236777130091CA7A /* Main.storyboard */,
 				B9F1073D236777130091CA7A /* Assets.xcassets */,
@@ -86,6 +103,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B9F10745236777130091CA7A /* Build configuration list for PBXNativeTarget "Bullseye" */;
 			buildPhases = (
+				A798B27FD942039EE0650DF0 /* [CP] Check Pods Manifest.lock */,
 				B9F1072D236777130091CA7A /* Sources */,
 				B9F1072E236777130091CA7A /* Frameworks */,
 				B9F1072F236777130091CA7A /* Resources */,
@@ -147,6 +165,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A798B27FD942039EE0650DF0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Bullseye-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B9F1072D236777130091CA7A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -155,7 +198,6 @@
 				B9F10739236777130091CA7A /* ViewController.swift in Sources */,
 				B9F10735236777130091CA7A /* AppDelegate.swift in Sources */,
 				B9F107492367BCAD0091CA7A /* AboutViewController.swift in Sources */,
-				B9F10737236777130091CA7A /* SceneDelegate.swift in Sources */,
 				B9F1074D2367BEEE0091CA7A /* AboutAuthorViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,18 +340,21 @@
 		};
 		B9F10746236777130091CA7A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77BC8FB55FC5B23B5B287BD4 /* Pods-Bullseye.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = K3B8L56Y75;
+				DEVELOPMENT_TEAM = 4GS9MV38S2;
 				INFOPLIST_FILE = Bullseye/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.matt.Bullseye;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -317,18 +362,21 @@
 		};
 		B9F10747236777130091CA7A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE54D929C536834FAD39DC70 /* Pods-Bullseye.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = K3B8L56Y75;
+				DEVELOPMENT_TEAM = 4GS9MV38S2;
 				INFOPLIST_FILE = Bullseye/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.matt.Bullseye;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
