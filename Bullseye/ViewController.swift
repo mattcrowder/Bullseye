@@ -47,13 +47,16 @@ class ViewController: UIViewController {
             title = "Not even close..."
         }
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        let action = UIAlertAction(title: "OK!", style: .default, handler: nil)
+        let action = UIAlertAction(title: "OK!", style: .default, handler: {
+            action in
+            self.updateScore(score: difference + additionalPoints)
+            self.startNewRound()
+        })
         
         alert.addAction(action)
         
         present(alert, animated: true, completion: nil)
-        updateScore(score: difference + additionalPoints)
-        startNewRound()
+        
     }
 
     @IBAction func sliderMoved(_ slider: UISlider) {
@@ -64,24 +67,23 @@ class ViewController: UIViewController {
         targetValue = Int.random(in: 1...100)
         currentValue = 50
         roundValue += 1
-        roundLabel.text = String(roundValue)
         slider.value = Float(currentValue)
         updateLabels()
     }
     
     func updateLabels() {
         targetLabel.text = String(targetValue)
+        scoreLabel.text = String(scoreValue)
+        roundLabel.text = String(roundValue)
     }
     
     func updateScore(score: Int) {
         scoreValue = scoreValue + score
-        scoreLabel.text = String(scoreValue)
+        
     }
     func resetScore() {
         scoreValue = 0
-        scoreLabel.text = String(scoreValue)
         roundValue = 1
-        roundLabel.text = String(roundValue)
     }
 }
 
