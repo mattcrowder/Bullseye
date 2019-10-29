@@ -84,6 +84,7 @@ class ViewController: UIViewController {
     func resetScore() {
         scoreValue = 0
         roundValue = 1
+        updateLabels()
     }
 }
 
